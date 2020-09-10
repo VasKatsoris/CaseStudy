@@ -3,7 +3,7 @@ package com.demo.project.ui.base
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import com.demo.project.R
-import com.demo.project.ui.Utils
+import com.demo.project.utils.Utils
 
 open class BaseFragment :Fragment(){
 

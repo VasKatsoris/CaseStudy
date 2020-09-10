@@ -1,4 +1,4 @@
-package com.demo.project.ui
+package com.demo.project.utils
 
 import android.view.View
 import android.widget.ImageView

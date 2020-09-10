@@ -1,20 +1,12 @@
-package com.demo.project.ui
+package com.demo.project.utils
 
-import android.app.Activity
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
-import android.transition.Fade
-import android.transition.Slide
-import android.transition.Transition
-import android.transition.TransitionSet
-import android.view.Gravity
 import android.view.View
 import android.view.ViewTreeObserver.OnGlobalLayoutListener
 import android.view.animation.*
-import android.view.inputmethod.InputMethodManager
-import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -29,7 +21,10 @@ class Utils {
 
         private fun getEntryAnimation(delay: Int): AnimationSet? {
             val set = AnimationSet(true)
-            val translateAnim: Animation? = Utils.getRightToLeftAnimation(Animation.RELATIVE_TO_PARENT)
+            val translateAnim: Animation? =
+                getRightToLeftAnimation(
+                    Animation.RELATIVE_TO_PARENT
+                )
             set.addAnimation(AlphaAnimation(-8f, 1f))
             set.addAnimation(translateAnim)
             set.startOffset = delay.toLong()
@@ -52,7 +47,11 @@ class Utils {
         fun animateViewsEntry(views:List<View>){
             var delay=0
             views.forEach {
-                it.startAnimation(Utils.getEntryAnimation(delay))
+                it.startAnimation(
+                    getEntryAnimation(
+                        delay
+                    )
+                )
                 delay+=50
             }
         }

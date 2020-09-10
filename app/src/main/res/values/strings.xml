@@ -5,5 +5,5 @@
     <string name="min">%s min</string>
     <string name="No_connection">No connection</string>
     <string name="Ok">Ok</string>
-    <string name="welcome_text">Welcome to LUA forecast app</string>
+    <string name="welcome_text">Welcome to LUAS forecast app</string>
 </resources>
