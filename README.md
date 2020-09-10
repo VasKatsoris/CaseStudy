@@ -1,12 +1,11 @@
 # CaseStudy
 
 
-Tech stack
-
-MVVM architecture
-Kotlin
-Retrofit
-Hilt-Dagger
-Data binding
-RxJava
-Navigation component
+**Tech stack**
+* MVVM architecture
+* Kotlin
+* Hilt-Dagger
+* Data binding
+* Retrofit
+* RxJava 
+* Navigation component
